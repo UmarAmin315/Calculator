@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background: #bb50c9;
+        padding: 10px;
+    }
+    .container{
+        max-width: 700px;
+        width: 100%;
+        background:#fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+    }
+    .container .title{
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+    }
+    .container form .user-details{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    } 
+    form .user-details .input-box{
+width: calc ( 100%/2- 20px);
+    }
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+}
+
+
+    
+</style>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <label class="details">Full Name</label>
+                    <input type="text" placeholder="enter your name">
+                </div>
+                <div class="input-box">
+                    <label class="details">UserName</label>
+                    <input type="text" placeholder="enter your username">
+                </div>
+                <div class="input-box">
+                    <label class="details">Email</label>
+                    <input type="text" placeholder="enter your Email">
+                </div>
+                <div class="input-box">
+                    <label class="details">phone number</label>
+                    <input type="text" placeholder="enter your Number">
+                </div>
+                <div class="input-box">
+                    <label class="details">Password</label>
+                    <input type="text" placeholder="enter your password">
+                </div>
+                <div class="input-box">
+                    <label class="details">Confirm Password</label>
+                    <input type="text" placeholder="confirm your password">
+                </div>
+            </div>
+            <div class="gender-details">
+                <lable class="gender-titles">Gender</lable>
+                <div class="category">
+                    <label for="">
+                        <span class="dot one"></span>
+                        <span class="gender">Mail</span>
+                    </label>
+                    <label for="">
+                        <span class="dot one"></span>
+                        <span class="gender">FeMail</span>
+                    </label>
+                    <label for="">
+                        <span class="dot one"></span>
+                        <span class="gender">Prefer not to say</span>
+                    </label>
+
+                </div>
+            </div>
+            <div class="button">
+                <input type="text " value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
